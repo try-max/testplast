@@ -43,31 +43,31 @@ def caseEdit():
 
         # 提取必要字段（建议增加字段存在性校验）
         id = data.get('id')
-        method = data.get('method')
-        url = data.get('url')
-        params = data.get('params', {})  # 默认空字典
-        headers = data.get('headers', {})  # 默认空字典
-        expected = data.get('expected')  # 注意字段名拼写是否正确
-        ignore_keys = data.get('ignore_keys', [])
-        desc = data.get('desc')
-        creator = data.get('creator')
-        created_at = data.get('created_at')
-        method = data.get('method')
-        modifier = data.get('modifier')
-        module = data.get('module')
+        # method = data.get('method')
+        # url = data.get('url')
+        # params = data.get('params', {})  # 默认空字典
+        # headers = data.get('headers', {})  # 默认空字典
+        # expected = data.get('expected')  # 注意字段名拼写是否正确
+        # ignore_keys = data.get('ignore_keys', [])
+        # desc = data.get('desc')
+        # creator = data.get('creator')
+        # created_at = data.get('created_at')
+        # method = data.get('method')
+        # modifier = data.get('modifier')
+        # module = data.get('module')
 
-        print(f"id:{id}，{type(id)}")
-        print(f"method:{method}，{type(method)}")
-        print(f"url:{url},{type(url)}")
-        print(f"params:{params},{type(params)}")
-        print(f"headers:{headers},{type(headers)}")
-        print(f"expected:{expected},{type(expected)}")
-        print(f"ignore_keys:{ignore_keys},{type(ignore_keys)}")
-        print(f"desc:{desc},{type(desc)}")
-        print(f"creator:{creator},{type(creator)}")
-        print(f"created_at:{created_at},{type(created_at)}")
-        print(f"modifier:{modifier},{type(modifier)}")
-        print(f"module:{module},{type(module)}")
+        # print(f"id:{id}，{type(id)}")
+        # print(f"method:{method}，{type(method)}")
+        # print(f"url:{url},{type(url)}")
+        # print(f"params:{params},{type(params)}")
+        # print(f"headers:{headers},{type(headers)}")
+        # print(f"expected:{expected},{type(expected)}")
+        # print(f"ignore_keys:{ignore_keys},{type(ignore_keys)}")
+        # print(f"desc:{desc},{type(desc)}")
+        # print(f"creator:{creator},{type(creator)}")
+        # print(f"created_at:{created_at},{type(created_at)}")
+        # print(f"modifier:{modifier},{type(modifier)}")
+        # print(f"module:{module},{type(module)}")
 
         modifier = data.get('modifier')
         modifier = json.loads(modifier)  # ['userName']
